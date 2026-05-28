@@ -13,7 +13,7 @@ export function Footer() {
             <Logo variant="wordmark" height={24} />
           </Link>
           <p className="text-[13.5px] text-[color:var(--color-text-muted)] max-w-xs leading-relaxed">
-            A research prototype for offline-first cough screening. Not a medical diagnosis.
+            A research prototype for cough screening — offline by default, with optional cloud sync. Not a medical diagnosis.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ import { site } from '@/lib/site';
 
 export const metadata: Metadata = {
   title: 'Privacy',
-  description: `How ${site.name} handles your data. TL;DR: nothing leaves your device unless you opt in.`,
+  description: `How ${site.name} handles your data. TL;DR: cough audio never leaves your device. Only screening summaries sync, and only if you sign in.`,
 };
 
 export default function PrivacyPage() {
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
               Your audio stays on your phone.
             </h1>
             <p className="mt-5 text-[16.5px] leading-relaxed text-[color:var(--color-text-muted)]">
-              Lively is a research prototype built around offline-first inference. We do not collect, store, or analyze your cough audio on any server.
+              Lively runs the screening model on your device. Your cough audio is never uploaded — even when you sign in to sync your history across devices.
             </p>
             <p className="mt-3 text-[13px] text-[color:var(--color-text-subtle)]">
               Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
@@ -88,7 +88,7 @@ export default function PrivacyPage() {
               ]}
             />
 
-            <div className="rounded-2xl bg-[color:var(--color-surface)] ring-1 ring-[color:var(--color-border)] p-7">
+            <div className="rounded-[6px] bg-[color:var(--color-surface)] ring-1 ring-[color:var(--color-border)] p-7">
               <h2 className="font-display text-[20px] font-bold tracking-tight">Questions?</h2>
               <p className="mt-2 text-[14.5px] text-[color:var(--color-text-muted)] leading-relaxed">
                 Get in touch at <a className="text-brand-600 underline-offset-2 hover:underline" href={`mailto:${site.email}`}>{site.email}</a>. This is a thesis project — we read every message.

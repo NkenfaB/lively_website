@@ -71,6 +71,7 @@ export function Hero() {
               className="flex flex-wrap gap-x-6 gap-y-2 text-[12.5px] text-[color:var(--color-text-subtle)] pt-2">
               <span>· Works offline</span>
               <span>· Audio stays on device</span>
+              <span>· Optional cloud sync</span>
               <span>· Free to use</span>
             </motion.div>
           </div>

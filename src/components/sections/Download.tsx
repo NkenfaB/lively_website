@@ -11,7 +11,7 @@ export function Download() {
     <section id="download" className="py-24 sm:py-32 relative">
       <Container>
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl glow ring-1 ring-white/10">
+          <div className="relative overflow-hidden rounded-[6px] glow ring-1 ring-white/10">
             <div className="absolute inset-0 bg-gradient-to-br from-brand-700 via-brand-800 to-brand-950" />
             <div className="absolute inset-0 opacity-30 mix-blend-soft-light"
                  style={{
@@ -22,9 +22,10 @@ export function Download() {
 
             <div className="relative px-7 py-14 sm:px-14 sm:py-16 grid lg:grid-cols-[1.2fr_1fr] gap-10 items-center">
               <div>
-                <Pill tone="brand" className="bg-white/15 text-white">
+                <span className="inline-flex items-center gap-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white/85">
+                  <span className="h-[1.5px] w-7 bg-white/60" aria-hidden />
                   Available now · Android
-                </Pill>
+                </span>
                 <h2 className="mt-5 font-display text-white text-[32px] sm:text-[40px] leading-[1.08] font-bold tracking-tight">
                   Install Lively in under a minute.
                 </h2>
@@ -46,7 +47,7 @@ export function Download() {
                     type="button"
                     disabled
                     aria-disabled
-                    className="inline-flex items-center gap-2 h-12 px-6 rounded-full text-[15px] font-semibold text-white/70 ring-1 ring-white/20 cursor-not-allowed">
+                    className="inline-flex items-center gap-2 h-12 px-6 rounded-[6px] text-[15px] font-semibold text-white/70 ring-1 ring-white/20 cursor-not-allowed">
                     <Smartphone size={18} />
                     On Google Play · Coming soon
                   </button>
@@ -60,7 +61,7 @@ export function Download() {
                 </div>
               </div>
 
-              <ol className="bg-white/[0.06] backdrop-blur rounded-2xl p-6 sm:p-7 ring-1 ring-white/10 space-y-4 text-white/85">
+              <ol className="bg-white/[0.06] backdrop-blur rounded-[6px] p-6 sm:p-7 ring-1 ring-white/10 space-y-4 text-white/85">
                 <li className="flex gap-3">
                   <span className="font-bold text-white/95 w-5">1.</span>
                   <span className="text-[13.5px] leading-relaxed">Tap <strong className="text-white">Download APK</strong> on your Android phone.</span>
@@ -85,7 +86,7 @@ export function Download() {
         {/* iOS / Play store secondary callout */}
         <Reveal delay={0.05}>
           <div className="mt-10 grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
-            <div className="rounded-2xl ring-1 ring-[color:var(--color-border)] p-5">
+            <div className="rounded-[6px] ring-1 ring-[color:var(--color-border)] p-5">
               <p className="text-[12.5px] font-bold uppercase tracking-wider text-[color:var(--color-text-subtle)]">
                 iOS
               </p>
@@ -93,7 +94,7 @@ export function Download() {
                 Coming after the research deployment.
               </p>
             </div>
-            <div className="rounded-2xl ring-1 ring-[color:var(--color-border)] p-5">
+            <div className="rounded-[6px] ring-1 ring-[color:var(--color-border)] p-5">
               <p className="text-[12.5px] font-bold uppercase tracking-wider text-[color:var(--color-text-subtle)]">
                 Google Play
               </p>

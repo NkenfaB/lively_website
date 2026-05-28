@@ -3,8 +3,8 @@ import { Reveal } from '../Reveal';
 
 const STATS = [
   { value: '< 50 ms', label: 'On-device inference' },
-  { value: '0 audio', label: 'Uploaded by default' },
-  { value: '100%', label: 'Works offline' },
+  { value: '0 audio', label: 'Uploaded, ever' },
+  { value: 'Offline', label: 'Or sync — your call' },
   { value: 'OTA', label: 'Model updates' },
 ];
 

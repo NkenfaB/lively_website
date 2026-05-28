@@ -26,7 +26,7 @@ function classes(variant: Variant, size: Size, disabled: boolean) {
 
   const s = size === 'lg' ? 'h-12 px-6 text-[15px]' : 'h-10 px-5 text-[14px]';
 
-  return `${v} ${s} inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-200 ease-out will-change-transform ${
+  return `${v} ${s} inline-flex items-center justify-center gap-2 rounded-[6px] font-semibold transition-all duration-200 ease-out will-change-transform ${
     disabled ? 'opacity-60 pointer-events-none' : 'hover:-translate-y-px active:translate-y-0'
   }`;
 }

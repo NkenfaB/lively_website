@@ -4,9 +4,9 @@
 
 export const site = {
   name: 'Lively',
-  tagline: 'On-device cough screening, offline-first.',
+  tagline: 'On-device cough screening, with optional cloud sync.',
   description:
-    'Lively records a short cough sample and runs an on-device model to indicate possible signs of illness. A research prototype — not a medical diagnosis.',
+    'Lively records a short cough sample and runs an on-device model to indicate possible signs of illness. Works fully offline; sign in to sync your history across devices. A research prototype — not a medical diagnosis.',
   url: 'https://lively.app', // replace with your actual Vercel URL once deployed
   email: 'hello@lively.app', // replace if you have a real address
   // Update this with the public URL of the APK when you upload it

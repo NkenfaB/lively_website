@@ -45,14 +45,14 @@ export function HowItWorks() {
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           {STEPS.map((s, i) => (
             <Reveal key={s.title} delay={0.05 * i}>
-              <div className="group relative h-full rounded-3xl bg-[color:var(--color-surface)] ring-1 ring-[color:var(--color-border)] p-7 transition-all duration-300 hover:-translate-y-1 hover:ring-brand-300/60 dark:hover:ring-brand-400/30">
-                <div className="absolute top-7 right-7 text-[11px] font-bold text-[color:var(--color-text-subtle)] tracking-widest">
-                  0{i + 1}
+              <div className="group relative h-full rounded-[6px] bg-[color:var(--color-surface)] ring-1 ring-[color:var(--color-border)] p-7 transition-colors duration-300 hover:ring-[color:var(--color-text-muted)]/30">
+                <div className="absolute top-7 right-7 font-display text-[36px] font-bold leading-none text-[color:var(--color-text-subtle)]/30 tracking-tighter">
+                  {String(i + 1).padStart(2, '0')}
                 </div>
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-100 text-brand-700 dark:bg-brand-900/50 dark:text-brand-200">
-                  <s.icon size={20} strokeWidth={2} />
+                <div className="text-brand-700 dark:text-brand-300">
+                  <s.icon size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className="mt-5 font-display text-[19px] font-bold tracking-tight">{s.title}</h3>
+                <h3 className="mt-6 font-display text-[19px] font-bold tracking-tight">{s.title}</h3>
                 <p className="mt-2 text-[14px] leading-relaxed text-[color:var(--color-text-muted)]">
                   {s.body}
                 </p>
