@@ -26,6 +26,7 @@ export function Footer() {
             <li><Link href="#features" className="text-[color:var(--color-text-muted)] hover:text-[color:var(--color-text)]">Features</Link></li>
             <li><Link href="#download" className="text-[color:var(--color-text-muted)] hover:text-[color:var(--color-text)]">Download</Link></li>
             <li><Link href="/privacy" className="text-[color:var(--color-text-muted)] hover:text-[color:var(--color-text)]">Privacy</Link></li>
+            <li><Link href="/delete-account" className="text-[color:var(--color-text-muted)] hover:text-[color:var(--color-text)]">Delete account</Link></li>
           </ul>
         </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 
 import { Container } from '@/components/Container';
 import { Header } from '@/components/Header';
@@ -49,7 +50,15 @@ export default function PrivacyPage() {
                 'Screening results (label + confidence + timestamp) — synced to your account if you sign in.',
                 'Account credentials — email + password are sent over HTTPS to Supabase Authentication.',
               ]}
-              footnote="You can sign out and delete your account at any time from the Settings screen."
+              footnote={
+                <>
+                  You can sign out and{' '}
+                  <Link href="/delete-account" className="text-brand-600 underline-offset-2 hover:underline">
+                    delete your account
+                  </Link>{' '}
+                  at any time from the Settings screen.
+                </>
+              }
             />
 
             <Article
@@ -83,9 +92,20 @@ export default function PrivacyPage() {
               title="Your rights"
               points={[
                 'Access — view all your synced screenings in the History tab.',
-                'Delete — remove individual results, clear all history, or delete your account.',
                 'Portability — export your local history as JSON from Settings (coming soon).',
               ]}
+              extra={
+                <li className="flex gap-3 text-[14.5px] leading-relaxed text-[color:var(--color-text-muted)]">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-brand-500 flex-shrink-0" />
+                  <span>
+                    Delete — remove individual results, clear all history, or{' '}
+                    <Link href="/delete-account" className="text-brand-600 underline-offset-2 hover:underline">
+                      delete your account
+                    </Link>
+                    .
+                  </span>
+                </li>
+              }
             />
 
             <div className="rounded-[6px] bg-[color:var(--color-surface)] ring-1 ring-[color:var(--color-border)] p-7">
@@ -108,11 +128,13 @@ export default function PrivacyPage() {
 function Article({
   title,
   points,
+  extra,
   footnote,
 }: {
   title: string;
   points: string[];
-  footnote?: string;
+  extra?: ReactNode;
+  footnote?: ReactNode;
 }) {
   return (
     <article>
@@ -124,6 +146,7 @@ function Article({
             <span>{p}</span>
           </li>
         ))}
+        {extra}
       </ul>
       {footnote ? (
         <p className="mt-3 text-[13px] text-[color:var(--color-text-subtle)] italic">{footnote}</p>
