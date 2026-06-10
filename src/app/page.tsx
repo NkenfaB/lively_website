@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/sections/Hero';
 import { Trust } from '@/components/sections/Trust';
 import { HowItWorks } from '@/components/sections/HowItWorks';
+import { Demo } from '@/components/sections/Demo';
 import { Features } from '@/components/sections/Features';
 import { Download } from '@/components/sections/Download';
 import { CTA } from '@/components/sections/CTA';
@@ -15,6 +16,7 @@ export default function HomePage() {
         <Hero />
         <Trust />
         <HowItWorks />
+        <Demo />
         <Features />
         <Download />
         <CTA />
